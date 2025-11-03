@@ -8,6 +8,6 @@ class PostsController < ApplicationController
 
   def create
     Post.create(content: params[:content])
-    redirect to: "/posts"
+    redirect_to "/posts"
   end
 end
